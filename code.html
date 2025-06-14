@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wahidullah Rashidi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #0a3d62;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #1e3799;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #4a69bd;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #1e3799;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #4a69bd;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a3d62;
+      color: white;
+    }
+    @media (max-width: 600px) {
+      header, section, nav a {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wahidullah Rashidi</h1>
+    <p>Future AI Engineer | Python & C++ Developer | Tech Learner</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a 3rd-year Computer Science student at Nangarhar University, passionate about AI, programming, and solving real-world problems. Currently learning Python and C++, and dreaming of becoming an AI Engineer.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python (OOP, Projects, 100 Days of Code)</li>
+      <li>C++ Programming</li>
+      <li>Mathematics for AI</li>
+      <li>HTML, CSS, Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>School Management System</h3>
+        <p>A Python-based system to manage students, teachers, attendance, and results. Includes login authentication and GUI features.</p>
+      </div>
+      <div class="project-card">
+        <h3>YouTube Coding Channel (Coming Soon)</h3>
+        <p>Building a platform to teach and share programming knowledge in simple and effective ways.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mayvlkzd" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top: 10px;">Or email: Wahidullahrashidi263@gmail.com</p>
+    <p>Fiverr: <a href="#" target="_blank">Your Fiverr Profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wahidullah Rashidi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
